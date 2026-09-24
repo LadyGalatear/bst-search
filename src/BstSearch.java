@@ -34,9 +34,9 @@ public class BstSearch {
 
         if (value == 0) {
             return true;
-        } else if (value < 0) {
-            return contains(root.left, target);
         } else if (value > 0) {
+            return contains(root.left, target);
+        } else if (value < 0) {
             return contains(root.right, target);
         }
 
